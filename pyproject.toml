@@ -1,0 +1,29 @@
+[project]
+name = "eds"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "boto3>=1.43.81",
+    "clickhouse-connect>=1.7.2",
+    "dagster>=1.13.19",
+    "dagster-webserver>=1.13.19",
+    "dbt-clickhouse>=1.10.2",
+    "dbt-core>=1.11.14",
+    "polars>=1.44.1",
+    "pyarrow>=25.0.1",
+    "requests>=2.34.2",
+    "s3fs>=0.4.2",
+]
+
+[project.scripts]
+eds = "eds:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.dagster]
+module_name = "eds_dagster.definitions"
+code_location_name = "eds"

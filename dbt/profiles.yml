@@ -1,0 +1,14 @@
+eds:
+  target: dev
+
+  outputs:
+    dev:
+      type: clickhouse
+      host: localhost
+      port: 8123
+      user: eds
+      password: "{{ env_var('CLICKHOUSE_PASSWORD') }}"
+      database: eds
+      schema: staging
+      secure: false
+      threads: 4
