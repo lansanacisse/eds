@@ -439,10 +439,3 @@ BI
 ```
 
 Dagster aura pour rôle d'orchestrer ces différentes étapes.
-
-Aucune donnée métier n'est actuellement intégrée dans l'environnement.
-
-```
-
-Ensuite, on pourra créer les fichiers `docs/01-environnement.md` à `docs/09-troubleshooting.md` avec les explications détaillées et surtout les **commandes exactes que nous avons utilisées**, y compris les problèmes Python 3.14/3.13, `profiles.yml`, MinIO, SSH GitHub et Dagster. Ce sera plus utile comme cahier de révision que de mettre toutes les explications dans le README.
-```
