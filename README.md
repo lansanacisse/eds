@@ -1,6 +1,6 @@
-# EDS — Entrepôt de Données de Santé
+# Build-EDS — Entrepôt de Données de Santé
 
-EDS est un projet personnel de Data Engineering visant à construire une plateforme locale de données de santé à partir de sources publiques.
+Build-EDS est un projet personnel de Data Engineering visant à construire une plateforme locale de données de santé à partir de sources publiques.
 
 ## Objectif
 
@@ -59,7 +59,7 @@ Dagster orchestre l'ensemble du pipeline.
 ## Structure du projet
 
 ```text
-eds/
+build-eds/
 ├── ingestion/              # Ingestion des données
 ├── data/                   # Données locales
 ├── scripts/                # Scripts utilitaires
@@ -76,7 +76,7 @@ eds/
 ### Environnement Python
 
 ```bash
-cd ~/projets/eds
+cd ~/projets/build-eds
 source .venv/bin/activate
 python --version
 uv --version
